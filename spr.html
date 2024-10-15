@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dawid Matusiak">
+    <meta name="description" content="Sklep z biżuterią">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykonał Matusiak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        .opis {
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .opis div {
+            width: 30%;
+            text-align: center;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            border: 6px solid yellow;
+            margin-bottom: 10px;
+        }
+        .wyliczenia {
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .link-menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: right;
+            margin-top: 20px;
+        }
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sklep z biżuterią</h1>
+
+    <div class="opis">
+        <div class="logo">
+            <img src="logo.png" alt="Logo hurtowni">
+            
+        </div>
+        <div>
+            <p><b><font color="red" size="6" face="Arial">Witamy w naszej hurtowni biżuterii – piękno w każdym detalu! </font></p></b>
+			<font color="black" size="4" face="Arial">Odkryj świat elegancji i wyjątkowych dodatków, które podkreślą Twój styl i osobowość. Nasza kolekcja biżuterii to połączenie klasyki z nowoczesnymi trendami – idealna na każdą okazję, od codziennych stylizacji po wyjątkowe chwile.)</font>
+        </div>
+        <div>
+            <p><b><font color="red" size="6" face="Arial"> Dlaczego warto wybrać nas? </font></p> </b>
+			<li> <font size="4" face="Arial"> Wysoka jakość: Dbamy o każdy detal, aby nasze produkty były nie tylko piękne, ale i trwałe. </li>
+			<li> Atrakcyjne ceny: Wysoka jakość nie musi oznaczać wysokiej ceny – oferujemy biżuterię na każdą kieszeń.  </li>
+			<li> Szybka dostawa i gwarancja satysfakcji: Twoje zamówienie dotrze szybko, a my zadbamy o to, aby spełniało Twoje oczekiwania. </font> </li>
+        </div>
+    </div>
+
+    <div class="wyliczenia">
+        <h2>Zakres działalności:</h2>
+        <ul>
+            <li>Naszyjniki i bransoletki – subtelne akcenty oraz bogato zdobione modele.</li>
+            <li>Pierścionki i kolczyki – klasyczne złoto, srebro oraz modne dodatki z kamieniami szlachetnymi.</li>
+            <li>Biżuterię personalizowaną – stwórz niepowtarzalny prezent dla bliskiej osoby.</li>
+            <li>Zegarki – eleganckie modele na każdą okazję, idealne dopełnienie Twojego stylu.</li>
+            <li>Akcesoria ślubne – wyjątkowe dodatki, które sprawią, że Twój wielki dzień będzie niezapomniany.</li>
+        </ul>
+    </div>
+
+    <div class="link-menu">
+        <a href="strona_menu.html">Przejdź do strony menu</a>
+    </div>
+
+    <footer>
+        &copy; <span id="data"></span> Matusiak
+    </footer>
+
+    <script>
+        // Wstawienie bieżącej daty
+        document.getElementById('data').textContent = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>
